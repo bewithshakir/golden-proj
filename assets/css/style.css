@@ -1,13 +1,35 @@
 body {
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
+    color: #4d4d4d;
+}
+/* --- Global --- */
+.btn-primary {
+    background-color: #4782bf;
+    color: #fff;
+}
+.btn-highlighted {
+    background-color: #ffd617;
+    color: #000000;
 }
 
 .element-half {
     width: 50% !important;
 }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: none;
+}
+.carousel-control-next, .carousel-control-prev {
+    top: 0%;
+    bottom: 51%;
+    width: 10%;
+}
+/* --- Global end --- */
+.index h2, h3 {
+    color: #313131;
+}
 .index h2 {
-    font-size: 48px;
+    font-size: 48px;    
 }
 
 .navbar-nav {
@@ -35,18 +57,72 @@ body {
     margin-right: 15px;
 }
 
+.tiles-section {
+    margin-top: 60px;
+}
+.tiles-section h2 {
+    margin-bottom: 30px;
+}
 
 .tiles-section h3 {
     margin-top: 30px;
+    font-size: 26px;
 }
 .tiles-section .card-body {
-    height: 560px;
+    height: 590px;
+    transition: all 0.3s;
+}
+.card.card-body:hover {
+    background: #4782bf;
+    color: #fff;
+    /* box-shadow: 0px 0px 10px rgba(71, 130, 191, 1); */
+}
+.card.card-body:hover h3 {
+    color: #ffffff;
+}
+.card.card-body:hover .btn {
+    background-color: #ffd617;
+    border-color: #ffd617;
+    color: #000000;
 }
 .paragraph-section {
     margin: 0px 0 30px 0;
 }
+.img-wrapper {
+    height: 345px;;
+}
 
 
+.banner-section .carousel-caption-main {
+    position: absolute;
+    top: 20%;
+    color: #fff;
+    font-size: 48px;
+    width: 60%;
+    line-height: 1.2;
+}
+.banner-section .btn {
+    font-size: 18px;
+    text-transform: uppercase;
+    background: #4782bf;
+    border-color: #4782bf;
+    font-weight: 300;
+}
+.banner-section .content-section {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.banner-section .banner-content {
+    color: #000000;
+    font-size: 28px;
+    position: absolute;
+    bottom: 70px;
+    font-family: 'Merriweather', serif;
+    width: 75%;
+    text-align: center;
+}
 /* --------- achievements ----------- */
 .key-achievements {
     background: url('../images/key-bg.jpg') top center no-repeat;
