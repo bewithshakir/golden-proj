@@ -325,3 +325,44 @@ body {
     padding: 40px 0;
     text-align: center;
 }
+
+
+/* --- Contact --- */
+.contact-header {
+    position: relative;
+}
+.contact-header img {
+    width: 100%;
+}
+.contact-header .hdr {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.contact-header p {
+    font-size: 35px;
+    width: 50%;
+    color: #fff;
+}
+
+
+.contact-section p {
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    width: 70%;
+}
+.mr-zero {
+    margin-right: 0;
+    margin-left: 0;
+}
+.contact-section .left {
+    background-color: #01063e;
+    padding: 30px;
+}
+.contact-section .right {
+    background-color: #ffd618;
+    padding: 30px;
+}
