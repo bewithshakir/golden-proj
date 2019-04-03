@@ -4,6 +4,23 @@ body {
     color: #4d4d4d;
 }
 /* --- Global --- */
+.btn {
+    text-transform: uppercase;
+}
+.btn-lg {
+    padding: 15px 30px;
+}
+.btn-md {
+    padding: 8px 10px;
+}
+.btn-outline-warning {
+    border-color: #ffd617;
+    color: #ffd617;
+    font-size: 16px;
+}
+.navbar-brand {
+    margin-right: 2rem;
+}
 .btn-primary {
     background-color: #4782bf;
     color: #fff;
@@ -57,12 +74,29 @@ body {
     margin-right: 15px;
 }
 
-.tiles-section {
+.tiles-section, 
+.gallery-section {
     margin-top: 60px;
+    padding-bottom: 40px;
 }
-.tiles-section h2 {
+.tiles-section h2, .gallery-section h2 {
     margin-bottom: 30px;
 }
+.tiles-section .carousel-indicators {
+    bottom: -22px;
+}
+
+.tiles-section .carousel-indicators li {
+    background-color: #4782bf;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.tiles-section .carousel-indicators li.active {
+    background-color: #ffd617;
+}
+
 
 .tiles-section h3 {
     margin-top: 30px;
@@ -75,7 +109,8 @@ body {
 .card.card-body:hover {
     background: #4782bf;
     color: #fff;
-    /* box-shadow: 0px 0px 10px rgba(71, 130, 191, 1); */
+    box-shadow: 0 18px 82px 0 hsla(0,0%,61%,.44);
+    
 }
 .card.card-body:hover h3 {
     color: #ffffff;
@@ -107,6 +142,7 @@ body {
     background: #4782bf;
     border-color: #4782bf;
     font-weight: 300;
+    margin-top: 15px;
 }
 .banner-section .content-section {
     position: absolute;
@@ -129,54 +165,108 @@ body {
     min-height: 680px;
     padding: 40px 0;
     color: #fff;
+    
 }
 .key-achievements h2 {
     margin-bottom: 30px;
-    margin-top: 84px;    
+    margin-top: 84px;
+    color: #ffffff;
 }
 .key-achievements .highlighted-text {
     color: #ffd717;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
 }
 .key-achievements p {
     margin-top: 15px;
     font-size: 26px;
 }
+.key-achievements .btn-outline-warning {
+    margin-top: 40px;
+}
+
 
 
 .gallery-section .gallary-img {
-    height: 400px;
+    height: 100%;
     width: 100%;
+    border-radius: 3px;
 }
 .gallery-section img {
     width: 100%;
+    border-radius: 3px;
+    height: calc(50% - 0px);
 }
-
+.gallery-section .fas {
+    border: 3px solid #ffd617;
+    border-radius: 100%;
+    padding: 14px 15px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    color: #ffd617;
+    transition: all 0.1s;
+}
+.gallery-section .fas:hover {
+    text-decoration: none;
+    box-shadow: 0 0 4px #ffd617;
+    font-size: 33px;
+}
+.gallery-section .thumb-wrapper {
+    height: 410px;
+    overflow: auto;
+}
+.gallery-section .thumb-wrapper img:first-child {
+    margin-top: -15px;
+}
+.gallery-section .thumb-wrapper img {
+    margin:15px 0;
+}
 
 .quality {
     background: url('../images/quality.jpg') top left no-repeat;
     height: 830px;
+    background-size: cover;
 }
+.quality h2 {
+    margin-top: 135px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: #244694;
+}
+.quality p {
+    font-size: 24px;
+    color: #07111e;
+}
+
 
 
 .steps-section {
     background: #062661;
     padding: 50px 0;
-    color: #ffb204;
+    color: #ffd617;
 }
 
 .steps-section h2 {
     color: #76809c;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 25px;
 }
 .steps-section p {
     margin-top: 20px;
+    font-size: 22px;
 }
 
 .footer-section {
-    background: #010207;
+    background: #010207 url('../images/footer-bg.jpg') top center no-repeat;
     color: #fff;
-    padding: 40px 0 20px 0;
+    padding: 60px 0;
+
 }
 .footer-section .container {
     text-align: center;
@@ -187,18 +277,48 @@ body {
 .footer-section h2 {
     width: 70%;
     margin: auto;
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 .footer-section .top-footer {
     text-align: left;
 }
 .footer-section .top-footer a {
     color: #fff;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     display: block;
+    transition: all 0.3s;
 }
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-section .btn-highlighted{
+    margin-bottom: 80px;
+}
+.footer-section .social-icons a {
+    display: inline;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.footer-section .h3-mr {
+    margin-top: 30px;
+}
+
 .address-setion p {
     padding-left: 20px;
+    margin-bottom: 10px;
+    display: flex;
 }
+.address-setion .fas, .address-setion .far {
+    margin-top: 4px;
+    margin-right: 10px
+}
+
 .btm-footer {
     background: #030305;
     color: #a4a4a6;
