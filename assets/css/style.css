@@ -114,8 +114,11 @@ body {
 .dropright:hover .inner-drop-down {
     display: block !important;
 }
-
-
+.table .thead-blue th {
+    background-color: #4781c0;
+    color: #ffffff;
+    border-color: #4781c0;
+}
 /* --- Global end --- */
 .index h2, h3 {
     color: #313131;
@@ -523,6 +526,9 @@ body {
 }
 .colorful-boxes .research{
     background: #ff9a60;
+}
+.colorful-boxes .blue {
+    background: #254695;
 }
 
 .colorful-boxes h4 {
