@@ -9,10 +9,10 @@ body {
   text-transform: uppercase;
 }
 .btn-lg {
-  padding: 0.9375rem 1.875rem;
+  padding: 15px 30px;
 }
 .btn-md {
-  padding: 0.5rem 0.625rem;
+  padding: 8px 10px;
 }
 .btn-outline-warning {
   border-color: #ffd617;
@@ -139,7 +139,7 @@ h3 {
   z-index: 1;
 }
 .top-header .navbar-nav .nav-item {
-  padding: 1.875rem 0;
+  padding: 30px 0;
 }
 .top-header .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
@@ -245,9 +245,6 @@ h3 {
   font-family: "Merriweather", serif;
   width: 75%;
   text-align: center;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 /* --------- achievements ----------- */
 .key-achievements {
@@ -319,7 +316,7 @@ h3 {
   background-size: cover;
 }
 .quality h2 {
-  margin-top: 4.375rem;
+  margin-top: 135px;
   font-family: "Merriweather", serif;
   font-weight: bold;
   color: #244694;
@@ -426,7 +423,7 @@ h3 {
   transform: translateY(-50%);
 }
 .contact-header p {
-  font-size: 2.1875rem;
+  font-size: 35px;
   width: 50%;
   color: #fff;
 }
@@ -438,7 +435,7 @@ h3 {
   color: #000000;
   text-align: center;
   width: 70%;
-  margin: 2.5rem auto;
+  margin: 40px auto;
 }
 .mr-zero {
   margin-right: 0;
@@ -525,10 +522,6 @@ h3 {
 }
 .colorful-boxes .blue {
   background: #254695;
-  text-align: center;
-}
-.colorful-boxes .blue img {
-  max-width: 100%;
 }
 
 .colorful-boxes h4 {

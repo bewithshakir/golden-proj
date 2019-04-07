@@ -1,0 +1,111 @@
+@media (max-width: 1024px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .banner-section .carousel-caption-main {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10%;
+  }
+  .quality {
+    height: 500px;
+  }
+  .contact-section .main-content {
+    width: 100%;
+  }
+  .footer-section h2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-header .navbar-nav .nav-item {
+    padding: 0.5rem 0;
+  }
+  .banner-section .banner-content {
+    bottom: 30px;
+    font-size: 1.4rem;
+  }
+  .quality {
+    height: 350px;
+  }
+  .quality h2 {
+    /* margin-top: 25px; */
+    font-size: 2rem;
+  }
+  .quality p {
+    font-size: 1.2rem;
+    background-color: rgba(255, 190, 12, 0.5);
+  }
+  .tiles-section .card-body {
+    height: 469px;
+  }
+  .tiles-section .card-body .img-wrapper {
+    height: 180px;
+  }
+  .tiles-section .card-body .img-wrapper img {
+    width: 100%;
+  }
+  .key-achievements {
+    min-height: 500px;
+  }
+  .contact-header p {
+    width: 100%;
+  }
+  .news-section {
+    background-size: cover;
+  }
+}
+@media (max-width: 640px) {
+  .banner-section .carousel-caption-main {
+    font-size: 2rem;
+  }
+  .banner-section .banner-content {
+    font-size: 1.2rem;
+  }
+  .tiles-section .card-body {
+    height: auto;
+  }
+  .tiles-section .card-body .img-wrapper {
+    height: auto;
+  }
+
+  .colorful-boxes .vision,
+  .colorful-boxes .mission {
+    min-height: auto;
+  }
+}
+@media (max-width: 460px) {
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  .footer-section h2 {
+    width: 100%;
+  }
+  .banner-section .banner-content {
+    bottom: 5px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  .gallery-section .fas {
+    display: none;
+  }
+  .gallery-section .col-md-8 {
+    margin-bottom: 30px;
+  }
+  .gallery-section .thumb-wrapper {
+    height: auto;
+    overflow: visible;
+  }
+
+  .contact-section .shadow-sm img {
+    max-width: 100%;
+  }
+
+  .contact-header .hdr {
+    width: 100%;
+  }
+}
