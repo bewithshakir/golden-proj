@@ -300,6 +300,7 @@ h3 {
   min-height: 680px;
   padding: 40px 0;
   color: #fff;
+  background-size: cover;
 }
 .key-achievements h2 {
   margin-bottom: 5.625rem;
@@ -532,6 +533,7 @@ h3 {
   font-size: 2.1875rem;
   width: 50%;
   color: #fff;
+  line-height: 1.2;
 }
 
 .contact-section .main-content {
@@ -614,11 +616,11 @@ h3 {
 
 .colorful-boxes .vision {
   background: #65b1ff;
-  min-height: 530px;
+  min-height: 400px;
 }
 .colorful-boxes .mission {
   background: #ffd617;
-  min-height: 530px;
+  min-height: 400px;
 }
 .colorful-boxes .quality-sec {
   background: #00d6d4;
@@ -635,13 +637,16 @@ h3 {
 }
 
 .colorful-boxes h4 {
-  font-size: 3rem;
+  font-size: 2.25rem;
+  margin-bottom: 20px;
 }
 .colorful-boxes p {
-  font-size: 1.875rem;
+  font-size: 1.4rem;
+  font-family: "Merriweather", serif;
+  font-style: italic;
 }
 .contact-section .box {
-  font-size: 1.875rem;
+  font-size: 1.4rem;
   font-family: "Merriweather", serif;
   font-style: italic;
 }
