@@ -81,6 +81,7 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   width: 230px;
+  top: 39px;
 }
 .custom-dropdown li {
   background: #4782bf;
@@ -94,10 +95,17 @@ body {
 .custom-dropdown li:hover .fas {
   color: #000000;
 }
+.nav-item:hover > .custom-dropdown .inner-item .inner-dropdown {
+  left: 100%;
+  top: 0;
+  margin-top: 0;
+}
 
-.nav-item:hover .custom-dropdown {
+.nav-item:hover > .custom-dropdown,
+.nav-item:hover > .custom-dropdown .inner-item:hover .inner-dropdown {
   display: block;
 }
+
 .nav-item .custom-dropdown a {
   color: #ffffff;
   border-bottom: 1px solid #316599;
@@ -124,13 +132,59 @@ body {
   color: #ffffff;
   border-color: #4781c0;
 }
+.border-btm-0 {
+  border-bottom: none !important;
+}
+.border-rt-0 {
+  border-right: none !important;
+}
+
+.custom-table th {
+  padding: 5px !important;
+  vertical-align: middle !important;
+  font-size: 0.8185rem !important;
+}
+.custom-table .wd-25 {
+  width: 25%;
+}
+.custom-table td {
+  font-size: 0.8185rem !important;
+  padding: 5px !important;
+}
+.p-0 {
+  padding: 0 !important;
+}
+.custom-table td.p-0 {
+  padding: 0 !important;
+}
+.custom-table td table {
+  border: none !important;
+  width: 100%;
+}
+.custom-table td table td {
+  border-bottom: none;
+  border-top: none;
+}
+.custom-table td table td:first-child {
+  border-left: none;
+}
+.custom-table td table td:last-child {
+  border-right: none;
+}
+#gallery-1 .modal-header {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#image {
+  width: 100%;
+}
 /* --- Global end --- */
 .index h2,
 h3 {
   color: #313131;
 }
 .index h2 {
-  font-size: 2.25rem;
+  font-size: 1.75rem;
 }
 
 .navbar-nav {
@@ -148,7 +202,7 @@ h3 {
   padding: 0;
 }
 .top-header .navbar-nav .nav-item {
-  padding: 0;
+  padding: 2px 0px;
 }
 .top-header .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
@@ -180,13 +234,19 @@ h3 {
 .tiles-section,
 .gallery-section {
   margin-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
-.tiles-section h2,
-.gallery-section h2 {
-  margin-bottom: 30px;
+.product-body {
+  padding-bottom: 0;
 }
 
+.tiles-section h2,
+.gallery-section h2 {
+  margin-bottom: 20px;
+}
+#carouselExampleControls .carousel-item img {
+  margin-top: -2px;
+}
 .tiles-section .carousel-indicators {
   bottom: -60px;
 }
@@ -209,14 +269,28 @@ h3 {
 .tiles-section .card-body {
   height: 280px;
   transition: all 0.3s;
-  margin-bottom: 0 !important;
+}
+.tiles-section.product-body .card-body {
+  height: 100%;
+}
+.tiles-section.product-body .card-body:hover {
+  background-color: #4782bf;
+  color: #fff;
+}
+.tiles-section.product-body .card-body:hover h3 {
+  color: #ffffff;
+}
+.tiles-section.product-body .card-body:hover .btn {
+  background-color: #ffd617;
+  color: #000;
+  border-color: #ffd617;
 }
 .tiles-section .tile-box {
   background-color: #4782bf;
   padding: 2rem 1.25rem 2rem 1.25rem;
   color: #fff;
   border-radius: 3px;
-  margin: 0 1.875rem 0;
+  margin: 0 1.3rem 0;
   margin-top: -3.875rem;
   position: relative;
   font-size: 0.9375rem;
@@ -370,6 +444,7 @@ h3 {
 .gallery-section .img4 {
   height: 323px;
 }
+
 .gallery-section p {
   margin-bottom: 10px;
 }
@@ -411,15 +486,17 @@ h3 {
 }
 
 .quality {
-  background: url("../images/quality.jpg") top left no-repeat;
+  background: url("../images/quality.png") top left no-repeat;
   height: 700px;
   background-size: 100% 100%;
+  margin-top: -72px;
+  position: relative;
 }
 .quality .icon-wrp {
   height: 65px;
 }
 .quality h2 {
-  margin-top: 10.375rem;
+  margin-top: 11.375rem;
   font-family: "Merriweather", serif;
   font-weight: bold;
   color: #244694;
@@ -433,8 +510,9 @@ h3 {
 
 .steps-section {
   background: #062661;
-  padding: 50px 0;
+  padding: 100px 0 60px 0;
   color: #ffd617;
+  margin-top: -70px;
 }
 
 .steps-section h2 {
@@ -453,7 +531,7 @@ h3 {
 .footer-section {
   background: #010207 url("../images/footer-bg.jpg") top center no-repeat;
   color: #fff;
-  padding: 80px 0;
+  padding: 90px 0 80px 0;
 }
 .footer-section .container {
   text-align: center;
@@ -464,11 +542,11 @@ h3 {
 .footer-section h2 {
   width: 70%;
   margin: auto;
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: #fff;
   font-family: "Merriweather", serif;
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.3;
   margin-bottom: 50px;
 }
 .footer-section .top-footer {
@@ -529,6 +607,12 @@ h3 {
   margin: auto;
   transform: translateY(-50%);
 }
+.contact-header .hdr.distribution {
+  top: 40%;
+}
+.contact-header .product-bnr .hdr {
+  top: 40%;
+}
 .contact-header p {
   font-size: 2.1875rem;
   width: 50%;
@@ -536,14 +620,18 @@ h3 {
   line-height: 1.2;
 }
 
+.management-bnr p {
+  width: 40%;
+}
+
 .contact-section .main-content {
   font-family: "Merriweather", serif;
   font-style: italic;
-  font-size: 2.1875rem;
-  color: #000000;
+  font-size: 1.5rem;
+  color: #07111e;
   text-align: center;
-  width: 70%;
-  margin: 2.5rem auto;
+  width: 73%;
+  margin: 3.5rem auto;
 }
 .mr-zero {
   margin-right: 0;
@@ -645,6 +733,35 @@ h3 {
   font-family: "Merriweather", serif;
   font-style: italic;
 }
+
+.management-body .mn-blue {
+  background: #4782bf;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  margin-left: -130px;
+  margin-top: 14%;
+}
+.management-body .mn-blue h4 {
+  font-style: normal;
+  margin-bottom: 0;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+.management-body .mn-blue h6 {
+  margin-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+}
+.management-body .mn-blue p {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-family: "Raleway", sans-serif;
+}
+.management-body .shadow-sm img {
+  max-width: 100%;
+}
+
 .contact-section .box {
   font-size: 1.4rem;
   font-family: "Merriweather", serif;
@@ -662,4 +779,13 @@ h3 {
   font-size: 1.125rem;
   font-style: italic;
   margin-bottom: 20px;
+}
+
+.common-modal-section {
+}
+.common-modal-section .modal-header {
+  align-items: baseline;
+}
+.common-modal-section .modal-header p {
+  margin-bottom: 0;
 }

@@ -27,18 +27,51 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                           <ul class="navbar-nav">
-                            <li class="nav-item ">
-                              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Products</a>
+                                <a class="nav-link" href="product.html">Products</a>
+                                <ul class="dropdown-menu custom-dropdown">
+                                    <li class="inner-item">
+                                        <a href="javascript:void(0)">Manufacturing <i class="fas fa-chevron-right"></i></a>
+                                        <ul class="dropdown-menu custom-dropdown inner-dropdown">                                               
+                                            <li>
+                                                <a href="product-power-transf.html">Power Transformers</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-distribution.html">Distribution Transformers</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-isolation.html">Isolation Transformers</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="#">Repairing <i class="fas fa-chevron-right"></i></a>
+                                        <ul class="dropdown-menu custom-dropdown inner-dropdown">                                               
+                                            <li>
+                                                <a href="product-repairing-rectifier.html">Rectifier Transformers</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-repairing-regulating.html">Regulating Transformers</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-repairing-welding.html">Welding Transformers</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Management</a>
+                            <a class="nav-link" href="about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="management.html">Management</a>
                             </li>
                             </li>
                             <li class="nav-item active">
-                              <a class="nav-link" href="#">Contact</a>
+                              <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                           </ul>
                         </div>
@@ -47,6 +80,7 @@
                                 <p><i class="fas fa-phone"></i> 91-9990575624</p>
                                 <p> <i class="fas fa-envelope"></i>sale@accitranformers.in</p>
                             </div>
+                            
                         </div>
                       </nav>
                 </div>
@@ -55,7 +89,7 @@
     </div>
     
     <div class="banner-section contact-header">
-        <img src="assets/images/about-us-bnr.jpg" alt="">
+        <img src="assets/images/contact-bnr.jpg" alt="">
         <div class="container hdr">
             <p>A team of highly educated and experienced people</p>
         </div>
@@ -65,7 +99,8 @@
     <div class="contact-section">
         
         <div class="container">
-            <p class="main-content">A team of highly educated and experienced people</p>
+            <p class="main-content">We shall strive to introduce and maintain a quality system which shall provide products and services of agreed quality on time and every time at competitive prices to the utter satisfaction of the customers by meeting their specified and implied needs at all times.
+            </p>
             <div class="row mr-zero">
                 <div class="col-md-8 left">
                     <h3>Send us a Message</h3>
@@ -107,23 +142,31 @@
         </div>
     </div>
 
-    <div class="steps-section">
+    <div class="steps-section mt-0">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <h2>01</h2>
+                    <div class="icon-wrp">
+                        <img src="./assets/images/st1.jpg" alt="">
+                    </div>
                     <p>Our valuable clients electricity board and goverment of India.</p>
                 </div>
                 <div class="col-md-3">
-                    <h2>02</h2>
+                    <div class="icon-wrp">
+                        <img src="./assets/images/st2.jpg" alt="">
+                    </div>
                     <p>Approved by CPRI and ERDA.</p>
                 </div>
                 <div class="col-md-3">
-                    <h2>03</h2>
+                    <div class="icon-wrp">
+                        <img src="./assets/images/st3.jpg" alt="">
+                    </div>
                     <p>Approved in All Over Uttar Pradesh by MVVNL and Other Electricity Board.</p>
                 </div>
                 <div class="col-md-3">
-                    <h2>04</h2>
+                    <div class="icon-wrp">
+                        <img src="./assets/images/st4.jpg" alt="">
+                    </div>
                     <p>An ISO 9001:2015 Certified Company</p>
                 </div>
             </div>
@@ -182,15 +225,17 @@
             <span>Copyright © CCI Transformers Pvt. Ltd. 2016. All rights reserved.</span>
         </div>
     </div>
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-        ...sss
-        </div>
-    </div>
-</div>
+    <div w3-include-html="common-contact-form.html"></div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./assets/js/w3.js"></script>
+<script src="./assets/js/master.js"></script>
+<script>
+    w3.includeHTML();        
+    $(document).ready(function() {
+        $('#exampleModal').modal('show');
+    });
+</script>
 </body>
 </html>

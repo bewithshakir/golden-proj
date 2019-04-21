@@ -41,6 +41,7 @@
   }
   .quality {
     height: 350px;
+    margin-top: 0;
   }
   .quality h2 {
     /* margin-top: 25px; */
@@ -93,6 +94,11 @@
   }
   .quality h2 {
     margin-top: 51px;
+  }
+
+  .management-body .mn-blue {
+    margin-left: -74px;
+    margin-top: 0;
   }
 }
 @media (max-width: 640px) {
@@ -149,6 +155,13 @@
   .gallery-section a {
     margin-bottom: 15px;
   }
+  .quality {
+    height: 280px;
+  }
+
+  .management-body .mn-blue {
+    margin-left: 0;
+  }
 }
 @media (max-width: 460px) {
   .btn-lg {
@@ -192,5 +205,8 @@
 
   .contact-header .hdr {
     width: 100%;
+  }
+  .contact-header p {
+    font-size: 1.56rem;
   }
 }

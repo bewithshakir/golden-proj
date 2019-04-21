@@ -24,60 +24,59 @@
                         <a class="navbar-brand" href="#">
                             <img src="assets/images/com-logo.png" alt="">
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                            aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon">
-                                <i class="fas fa-bars"></i>
+                            <i class="fas fa-bars"></i>
                             </span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul class="navbar-nav">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="JavaScript:Void(0);" data-toggle="dropdown">Products</a>
-                                    <ul class="custom-dropdown dropdown-menu drop-pos-top">
-                                        <li class="dropright">
-                                            <a href="JavaScript:Void(0);" data-toggle="dropdown">Manufacturing <i class="fas fa-chevron-right"></i></a>
-                                            <ul class="custom-dropdown dropdown-menu inner-drop-down">
-                                                <li>    
-                                                    <a href="#">Power Transformers</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Distribution Transformers</a>
-                                                </li>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Isolation Transformers</a>
-                                                </li>
-                                            </ul>                                            
-                                        </li>
-                                        <li class="dropright">
-                                            <a href="JavaScript:Void(0);" data-toggle="dropdown">Repairing</a>
-                                            <ul class="custom-dropdown dropdown-menu inner-drop-down">
-                                                <li>
-                                                    <a href="#">sdfsd</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">sdfsd</a>
-                                                </li>
-                                            </ul>    
-                                        </li>
-                                    </ul>
-                                </li>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Management</a>
-                                </li>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="product.html">Products</a>
+                                <ul class="dropdown-menu custom-dropdown">
+                                    <li class="inner-item">
+                                        <a href="javascript:void(0)">Manufacturing <i class="fas fa-chevron-right"></i></a>
+                                        <ul class="dropdown-menu custom-dropdown inner-dropdown">                                               
+                                            <li>
+                                                <a href="product-power-transf.html">Power Transformers</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-distribution.html">Distribution Transformers</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-isolation.html">Isolation Transformers</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="#">Repairing <i class="fas fa-chevron-right"></i></a>
+                                        <ul class="dropdown-menu custom-dropdown inner-dropdown">                                               
+                                            <li>
+                                                <a href="product-repairing-rectifier.html">Rectifier Transformers</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-repairing-regulating.html">Regulating Transformers</a>
+                                            </li>
+                                            <li>
+                                                <a href="product-repairing-welding.html">Welding Transformers</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="management.html">Management</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
                             </ul>
                         </div>
                         <div class="form-inline">
@@ -85,15 +84,16 @@
                                 <p><i class="fas fa-phone"></i> 91-9990575624</p>
                                 <p> <i class="fas fa-envelope"></i>sale@accitranformers.in</p>
                             </div>
+                            
                         </div>
-                    </nav>
+                        </nav>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="banner-section contact-header">
-        <img src="assets/images/about-us-bnr.jpg" alt="">
+    <div class="banner-section contact-header product-bnr">
+        <img src="assets/images/products-bnr.jpg" alt="">
         <div class="container hdr">
             <p>Wide Range of Transformers</p>
         </div>
@@ -101,12 +101,12 @@
     </div>
 
 
-    <div class="tiles-section">
+    <div class="tiles-section product-body mt-0">
         <div class="container">
             <h2>Manufacturing:</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm card-body">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm card-body">
                         <div class="img-wrapper">
                             <img src="assets/images/products/product1.png" alt="">
                         </div>
@@ -116,8 +116,8 @@
                         <button class="btn btn-primary btn-md element-half">Read More</button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm card-body">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm card-body">
                         <div class="img-wrapper">
                             <img src="assets/images/products/product2.png" alt="">
                         </div>
@@ -126,8 +126,8 @@
                         <button class="btn btn-primary btn-md element-half">Read More</button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm card-body">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm card-body">
                         <div class="img-wrapper">
                             <img src="assets/images/products/product3.png" alt="">
                         </div>
@@ -140,12 +140,12 @@
         </div>
     </div>
 
-    <div class="tiles-section">
+    <div class="tiles-section product-body">
         <div class="container">
             <h2>Repairing:</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm card-body">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm card-body">
                         <div class="img-wrapper">
                             <img src="assets/images/products/product1.png" alt="">
                         </div>
@@ -155,8 +155,8 @@
                         <button class="btn btn-primary btn-md element-half">Read More</button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm card-body">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm card-body">
                         <div class="img-wrapper">
                             <img src="assets/images/products/product2.png" alt="">
                         </div>
@@ -165,8 +165,8 @@
                         <button class="btn btn-primary btn-md element-half">Read More</button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm card-body">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm card-body">
                         <div class="img-wrapper">
                             <img src="assets/images/products/product3.png" alt="">
                         </div>
@@ -175,8 +175,8 @@
                         <button class="btn btn-primary btn-md element-half">Read More</button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm card-body">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm card-body">
                         <div class="img-wrapper">
                             <img src="assets/images/products/product1.png" alt="">
                         </div>
@@ -186,8 +186,8 @@
                         <button class="btn btn-primary btn-md element-half">Read More</button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm card-body">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm card-body">
                         <div class="img-wrapper">
                             <img src="assets/images/products/product2.png" alt="">
                         </div>
@@ -196,8 +196,8 @@
                         <button class="btn btn-primary btn-md element-half">Read More</button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm card-body">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm card-body">
                         <div class="img-wrapper">
                             <img src="assets/images/products/product3.png" alt="">
                         </div>
@@ -210,7 +210,7 @@
         </div>
     </div>
 
-    <div class="quality">
+    <div class="quality mt-0">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-md-6">
@@ -225,19 +225,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <h2>01</h2>
+                    <div class="icon-wrp">
+                        <img src="./assets/images/st1.jpg" alt="">
+                    </div>
                     <p>Our valuable clients electricity board and goverment of India.</p>
                 </div>
                 <div class="col-md-3">
-                    <h2>02</h2>
+                    <div class="icon-wrp">
+                        <img src="./assets/images/st2.jpg" alt="">
+                    </div>
                     <p>Approved by CPRI and ERDA.</p>
                 </div>
                 <div class="col-md-3">
-                    <h2>03</h2>
+                    <div class="icon-wrp">
+                        <img src="./assets/images/st3.jpg" alt="">
+                    </div>
                     <p>Approved in All Over Uttar Pradesh by MVVNL and Other Electricity Board.</p>
                 </div>
                 <div class="col-md-3">
-                    <h2>04</h2>
+                    <div class="icon-wrp">
+                        <img src="./assets/images/st4.jpg" alt="">
+                    </div>
                     <p>An ISO 9001:2015 Certified Company</p>
                 </div>
             </div>
@@ -296,14 +304,9 @@
             <span>Copyright © CCI Transformers Pvt. Ltd. 2016. All rights reserved.</span>
         </div>
     </div>
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                ...sss
-            </div>
-        </div>
-    </div>
+    <div w3-include-html="common-contact-form.html"></div>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -313,6 +316,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/w3.js"></script>
+    <script src="./assets/js/master.js"></script>
+    <script>
+        w3.includeHTML();        
+        $(document).ready(function() {
+            $('#exampleModal').modal('show');
+        });
+    </script>
 </body>
 
 </html>
